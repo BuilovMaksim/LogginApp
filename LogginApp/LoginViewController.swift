@@ -20,6 +20,10 @@ final class LoginViewController: UIViewController {
         welcomeVC.welcomeUserName = userNameTF.text
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     //MARC: IB Actions
     @IBAction func logInButtonPressed() {
         guard let inputTextUserName = userNameTF.text, !inputTextUserName.isEmpty else {
@@ -63,10 +67,14 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        guard segue.source is LoginViewController else { return }
+        guard segue.source is LoginViewController else {
+            userNameTF.text = ""
+            passwordTF.text = ""
+            return
+        }
     }
     
-    //MARC: Private Methods
+    //MARC: Private Method
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(
             title: title,
