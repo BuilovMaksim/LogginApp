@@ -13,16 +13,9 @@ final class WelcomeViewController: UIViewController {
     
     var welcomeUserName: String!
     
-    //MARC: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         
         welcomeLabel.text = "Welcome, " +  welcomeUserName + " !"
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let loginVC = segue.destination as? LoginViewController else { return }
-        loginVC.userNameTF.text = ""
-        loginVC.passwordTF.text = ""
     }
 }
