@@ -14,6 +14,9 @@
 		8E0B74B929D70CA4009A050C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0B74B829D70CA4009A050C /* Assets.xcassets */; };
 		8E0B74BC29D70CA4009A050C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0B74BA29D70CA4009A050C /* LaunchScreen.storyboard */; };
 		8E0B74C429D892D8009A050C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0B74C329D892D8009A050C /* WelcomeViewController.swift */; };
+		8E545D6229DC57530079F39D /* BiographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E545D6129DC57530079F39D /* BiographyViewController.swift */; };
+		8EE7B14929DC23D00076BA8E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7B14829DC23D00076BA8E /* User.swift */; };
+		8EE7B14B29DC327E0076BA8E /* PersonalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7B14A29DC327E0076BA8E /* PersonalDataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		8E0B74BB29D70CA4009A050C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0B74BD29D70CA4009A050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0B74C329D892D8009A050C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		8E545D6129DC57530079F39D /* BiographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyViewController.swift; sourceTree = "<group>"; };
+		8EE7B14829DC23D00076BA8E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8EE7B14A29DC327E0076BA8E /* PersonalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,51 @@
 		8E0B74AE29D70CA3009A050C /* LogginApp */ = {
 			isa = PBXGroup;
 			children = (
-				8E0B74AF29D70CA3009A050C /* AppDelegate.swift */,
-				8E0B74B129D70CA3009A050C /* SceneDelegate.swift */,
-				8E0B74B329D70CA3009A050C /* LoginViewController.swift */,
-				8E0B74C329D892D8009A050C /* WelcomeViewController.swift */,
-				8E0B74B529D70CA3009A050C /* Main.storyboard */,
+				8EE7B14429DC207B0076BA8E /* ViewControllers */,
+				8EE7B14729DC212F0076BA8E /* Models */,
+				8EE7B14329DC1FE10076BA8E /* Storyboards */,
+				8EE7B14229DC1FA40076BA8E /* App */,
 				8E0B74B829D70CA4009A050C /* Assets.xcassets */,
-				8E0B74BA29D70CA4009A050C /* LaunchScreen.storyboard */,
-				8E0B74BD29D70CA4009A050C /* Info.plist */,
 			);
 			path = LogginApp;
+			sourceTree = "<group>";
+		};
+		8EE7B14229DC1FA40076BA8E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8E0B74AF29D70CA3009A050C /* AppDelegate.swift */,
+				8E0B74B129D70CA3009A050C /* SceneDelegate.swift */,
+				8E0B74BD29D70CA4009A050C /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8EE7B14329DC1FE10076BA8E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E0B74B529D70CA3009A050C /* Main.storyboard */,
+				8E0B74BA29D70CA4009A050C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8EE7B14429DC207B0076BA8E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E0B74B329D70CA3009A050C /* LoginViewController.swift */,
+				8E0B74C329D892D8009A050C /* WelcomeViewController.swift */,
+				8EE7B14A29DC327E0076BA8E /* PersonalDataViewController.swift */,
+				8E545D6129DC57530079F39D /* BiographyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8EE7B14729DC212F0076BA8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8EE7B14829DC23D00076BA8E /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E545D6229DC57530079F39D /* BiographyViewController.swift in Sources */,
 				8E0B74B429D70CA3009A050C /* LoginViewController.swift in Sources */,
 				8E0B74C429D892D8009A050C /* WelcomeViewController.swift in Sources */,
+				8EE7B14B29DC327E0076BA8E /* PersonalDataViewController.swift in Sources */,
 				8E0B74B029D70CA3009A050C /* AppDelegate.swift in Sources */,
+				8EE7B14929DC23D00076BA8E /* User.swift in Sources */,
 				8E0B74B229D70CA3009A050C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +337,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2X3P63AR2M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LogginApp/Info.plist;
+				INFOPLIST_FILE = LogginApp/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AboutMe;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +370,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2X3P63AR2M;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LogginApp/Info.plist;
+				INFOPLIST_FILE = LogginApp/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AboutMe;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
